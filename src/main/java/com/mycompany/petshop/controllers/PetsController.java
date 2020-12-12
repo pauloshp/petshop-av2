@@ -42,7 +42,7 @@ public class PetsController {
     }
 
     @Get("id/{id}")
-    public void getPet(String id) {
+    public void updatePet(String id) {
         result.include("pet", this.petApplication.findById(id));
     }
 

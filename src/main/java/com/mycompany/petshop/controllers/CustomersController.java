@@ -43,7 +43,7 @@ public class CustomersController {
     }
 
     @Get("id/{id}")
-    public void getCustomer(String id) {
+    public void updateCustomer(String id) {
         result.include("customer", this.customerApplication.findById(id));
     }
 
